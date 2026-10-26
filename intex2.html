@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Adictiva - En Peligro de Extinción</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212; 
+            color: #e0e0e0; 
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+
+        
+        header {
+            background: linear-gradient(135deg, #1f1c2c, #928dab); 
+            border-bottom: 4px solid #d4af37; 
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        header h2 {
+            font-size: 1.3rem;
+            color: #d4af37; 
+            font-weight: 400;
+        }
+
+        
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: #1e1e1e; 
+        }
+
+        
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .galeria img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #333;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        
+        .galeria img:hover {
+            transform: scale(1.03);
+            border-color: #d4af37;
+        }
+
+        
+        .reproductores {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background: #151515;
+            border-left: 5px solid #bdc3c7;
+        }
+
+        .reproductores video {
+            max-width: 100%;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+
+        .reproductores audio {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        
+        .biografia p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .biografia ul {
+            list-style-type: none; 
+            margin-top: 20px;
+        }
+
+        .biografia li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+            background: #252525;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #d4af37;
+        }
+
+        .biografia li strong {
+            color: #ffffff;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        
+        .curiosidades h3 {
+            font-size: 1.8rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .curiosidades ol {
+            margin-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .curiosidades ol li {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        .curiosidades ol li strong {
+            color: #d4af37;
+        }
+        
+
+        .enlace-contenedor {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .btn-enlace {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #121212;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .btn-enlace:hover {
+            background-color: #f39c12;
+            transform: translateY(-2px);
+        }
+
+    
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            section { padding: 20px; }
+            .galeria { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <h1>En Peligro de Extinción</h1>
+        <h2>Banda: LA ADICTIVA</h2>
+    </header>
+
+    
+    <main>
+        
+        
+        <section class="galeria">
+            <img src="imagenes/La adictiva 4.jpg" alt="La Adictiva - Foto 4" width="350" height="350">
+            <img src="imagenes/La adictiva.jpeg" alt="La Adictiva - Foto Principal" width="350" height="350">
+            <img src="imagenes/La adictiva 3.jpg" alt="La Adictiva - Foto 3" width="350" height="350">
+        </section>
+
+        <!-- Reproductores de Audio y Video -->
+        <section class="reproductores">
+            <video controls autoplay loop width="300" height="300">
+                <source src="video/En peligro de extincion video.mp4" type="video/mp4">
+                Tu navegador no soporta video en HTML5.
+            </video>
+            
+            <audio controls loop>
+                <source src="audio/En peligro de extincion audio.mpeg" type="audio/mpeg">
+                Tu navegador no soporta audio en HTML5.
+            </audio>
+        </section>
+
+        <!-- Historia / Biografía -->
+        <section class="biografia">
+            <p>La banda nació el 19 de marzo de 1990 en el pequeño poblado de Mesillas, Concordia, Sinaloa. En un inicio, la agrupación no tenía la enorme producción que posee hoy en día: según han relatado sus miembros, comenzaron como un grupo local humilde que interpretaba música de viento tradicional.</p>
+            
+            <p>La evolución de su creación y de su nombre se divide en tres aspectos clave contados por ellos mismos:</p>
+            
+            <ul>
+                <li><strong>El origen del nombre original:</strong> Al fundarse, decidieron llamarla Banda San José de Mesillas. Este nombre surgió de la combinación de su pueblo natal (Mesillas) y del santo patrono del lugar (San José), ya que formalmente iniciaron un día de San José.</li>
+                <li><strong>La transformación a "La Adictiva":</strong> Con el paso de los años, el término "Adictiva" se adoptó debido al tremendo arrastre que consiguieron en las zonas cercanas. Los propios habitantes y fanáticos le decían a los integrantes que su ritmo provocaba "adicción", lo que los llevó a modificar el nombre oficialmente.</li>
+                <li><strong>Los retos iniciales:</strong> En palabras de Jerry Corrales para People en Español, "una carrera sin retos sería algo inútil". El principal obstáculo narrado por los miembros en sus comienzos fue ganarse el gusto del público saliendo de su comunidad, algo que lograron picando piedra a través de la constancia, su característico estilo romántico y un sonido sinaloense único.</li>
+            </ul>
+        </section>
+
+        <!-- Datos y Curiosidades -->
+        <section class="curiosidades">
+            <h3>Curiosidades</h3>
+            <ol>
+                <li><strong>Origen:</strong> Nació en el pueblo de Mesillas, Concordia, Sinaloa, en 1990.</li>
+                <li><strong>Nombre:</strong> Se fundó originalmente de forma sencilla y en 2008 adoptó el nombre oficial de La Adictiva Banda San José de Mesillas, acortándolo después a La Adictiva.</li>
+                <li><strong>Estilo musical:</strong> Interpreta banda sinaloense, baladas, boleros, rancheras, sones y corridos.</li>
+                <li><strong>Éxitos principales:</strong> Temas como "En Peligro de Extinción", "Después de Ti", "¿Quién?" y "El Amor de Mi Vida".</li>
+            </ol>
+            
+            <!-- Enlace transformado en un botón llamativo -->
+            <div class="enlace-contenedor">
+                <a href="https://google.com" class="btn-enlace" target="_blank" rel="noopener">Ver más imágenes de La Adictiva</a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
